@@ -1,0 +1,14 @@
+{
+  "name": "DesperateDevs.Unity.Editor",
+  "rootNamespace": "DesperateDevs.Unity.Editor",
+  "references": ["DesperateDevs.Extensions", "DesperateDevs.Serialization"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
