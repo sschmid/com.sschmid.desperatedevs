@@ -1,0 +1,22 @@
+{
+  "name": "com.sschmid.desperatedevs.reflection",
+  "version": "1.0.0",
+  "displayName": "DesperateDevs.Reflection",
+  "description": "DesperateDevs.Reflection",
+  "unity": "2021.3",
+  "documentationUrl": "https://github.com/sschmid/DesperateDevs",
+  "changelogUrl": "https://github.com/sschmid/DesperateDevs/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/sschmid/DesperateDevs/blob/main/LICENSE.md",
+  "dependencies": { 
+    "com.sschmid.desperatedevs.extensions": "1.0.0",
+    "com.sschmid.sherlog": "1.0.0"
+  },
+  "keywords": [
+    "desperate",
+    "devs",
+    "desperatedevs"
+  ],
+  "author": {
+    "name": "sschmid"
+  }
+}

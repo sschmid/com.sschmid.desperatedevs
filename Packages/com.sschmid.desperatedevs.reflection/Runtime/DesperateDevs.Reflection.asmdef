@@ -1,0 +1,14 @@
+{
+  "name": "DesperateDevs.Reflection",
+  "rootNamespace": "DesperateDevs.Reflection",
+  "references": ["DesperateDevs.Extensions", "Sherlog"],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
