@@ -6,6 +6,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.sschmid.desperatedevs.extensions": {
+      "version": "file:com.sschmid.desperatedevs.extensions",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.sschmid.sherlog": {
       "version": "1.0.0",
       "depth": 0,
