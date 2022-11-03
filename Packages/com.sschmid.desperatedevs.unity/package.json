@@ -1,0 +1,19 @@
+{
+  "name": "com.sschmid.desperatedevs.unity",
+  "version": "1.0.0",
+  "displayName": "DesperateDevs.Unity",
+  "description": "DesperateDevs.Unity",
+  "unity": "2021.3",
+  "documentationUrl": "https://github.com/sschmid/DesperateDevs",
+  "changelogUrl": "https://github.com/sschmid/DesperateDevs/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/sschmid/DesperateDevs/blob/main/LICENSE.md",
+  "dependencies": { },
+  "keywords": [
+    "desperate",
+    "devs",
+    "desperatedevs"
+  ],
+  "author": {
+    "name": "sschmid"
+  }
+}

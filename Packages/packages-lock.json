@@ -35,6 +35,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.sschmid.desperatedevs.unity": {
+      "version": "file:com.sschmid.desperatedevs.unity",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.sschmid.sherlog": {
       "version": "1.0.0",
       "depth": 0,
