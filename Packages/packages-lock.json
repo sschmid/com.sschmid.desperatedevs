@@ -29,6 +29,12 @@
         "com.sschmid.desperatedevs.extensions": "1.0.0"
       }
     },
+    "com.sschmid.desperatedevs.threading": {
+      "version": "file:com.sschmid.desperatedevs.threading",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.sschmid.sherlog": {
       "version": "1.0.0",
       "depth": 0,
