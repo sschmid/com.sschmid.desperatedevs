@@ -21,6 +21,14 @@
         "com.sschmid.sherlog": "1.0.0"
       }
     },
+    "com.sschmid.desperatedevs.serialization": {
+      "version": "file:com.sschmid.desperatedevs.serialization",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.sschmid.desperatedevs.extensions": "1.0.0"
+      }
+    },
     "com.sschmid.sherlog": {
       "version": "1.0.0",
       "depth": 0,
