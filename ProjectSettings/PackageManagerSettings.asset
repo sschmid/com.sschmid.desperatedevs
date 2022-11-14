@@ -30,7 +30,9 @@ MonoBehaviour:
     m_Url: https://package.openupm.com
     m_Scopes:
     - com.openupm
-    - com.sschmid
+    - com.sschmid.desperatedevs.extensions
+    - com.sschmid.desperatedevs.serialization
+    - com.sschmid.sherlog
     m_IsDefault: 0
     m_Capabilities: 0
   m_UserSelectedRegistryName: package.openupm.com
