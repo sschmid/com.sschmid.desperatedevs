@@ -15,6 +15,10 @@ on:
           - DesperateDevs.Threading
           - DesperateDevs.Unity
           - DesperateDevs.Unity.Editor
+      commit:
+        description: "Commit hash"
+        required: true
+        type: string
 
 concurrency: release
 
@@ -25,7 +29,14 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v3
         with:
+          fetch-depth: 0
           submodules: 'recursive'
+
+      - name: "Checkout DesperateDevs@${{ inputs.commit }}"
+        run: |
+          cd DesperateDevs
+          git switch main
+          git reset --hard ${{ inputs.commit }}
 
       - name: "Install dependencies"
         run: |
