@@ -1,7 +1,9 @@
 {
   "name": "DesperateDevs.Serialization",
   "rootNamespace": "DesperateDevs.Serialization",
-  "references": ["DesperateDevs.Extensions"],
+  "references": [ 
+    "DesperateDevs.Extensions"
+  ],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
