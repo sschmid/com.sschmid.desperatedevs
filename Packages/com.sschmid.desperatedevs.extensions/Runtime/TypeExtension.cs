@@ -55,10 +55,18 @@ namespace DesperateDevs.Extensions
             return null;
         }
 
-        public static string ShortTypeName(this string fullTypeName)
+        public static string TypeName(this string fullTypeName)
         {
-            var split = fullTypeName.Split('.');
-            return split[split.Length - 1];
+            var index = fullTypeName.LastIndexOf(".", StringComparison.Ordinal) + 1;
+            return fullTypeName.Substring(index, fullTypeName.Length - index);
+        }
+
+        public static string Namespace(this string fullTypeName)
+        {
+            var index = fullTypeName.LastIndexOf(".", StringComparison.Ordinal);
+            return index == -1
+                ? string.Empty
+                : fullTypeName.Substring(0, index);
         }
 
         public static string RemoveDots(this string fullTypeName) =>
