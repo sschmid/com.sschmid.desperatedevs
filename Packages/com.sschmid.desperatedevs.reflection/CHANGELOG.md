@@ -6,20 +6,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### [DesperateDevs.Reflection/1.0.2] - 2022-12-20
+### Added
+- Use `DesperateDevs.Extensions/2.0.0`
+
+### [DesperateDevs.Serialization/2.0.1] - 2022-12-20
+### Added
+- Use `DesperateDevs.Extensions/2.0.0`
+
+### [DesperateDevs.Extensions/2.0.0]- 2022-12-19
+### Added
+- Add `TypeExtension.Namespace`
+
+### Changed
+- Rename `TypeExtension.ShortTypeName` to `TypeExtension.TypeName`
+
+### [DesperateDevs.Cli.Utils/1.0.2] - 2022-11-15
+### Changed
+- Update to Sherlog.Formatters 2.*
+
 ### [DesperateDevs.Cli.Utils/1.0.1] - 2022-11-10
+### Changed
 - Use version ranges for package references
 
 ### [DesperateDevs.Reflection/1.0.1] - 2022-11-10
+### Changed
 - Use version ranges for package references
 
 ### Jenny
-- Extract TCPeasy to it's own repo: https://github.com/sschmid/Jenny
+Extract TCPeasy to it's own repo: https://github.com/sschmid/Jenny
 
 ### Sherlog
-- Extract Sherlog to it's own repo: https://github.com/sschmid/Sherlog
+Extract Sherlog to it's own repo: https://github.com/sschmid/Sherlog
 
 ### TCPeasy
-- Extract TCPeasy to it's own repo: https://github.com/sschmid/TCPeasy
+Extract TCPeasy to it's own repo: https://github.com/sschmid/TCPeasy
 
 ### Other
 - Restructure project using tests folder
@@ -28,15 +49,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove bee
 
 ### [DesperateDevs.Caching/1.1.0] - 2022-09-26
+### Added
 - Add non-alloc `pool.Drain(buffer)`
 
 ### [DesperateDevs.Serialization/2.0.0] - 2022-09-26
+### Added
 - Add `preferences.Minified` bool
 
 ### [DesperateDevs.Serialization.Cli.Utils/1.0.1] - 2022-09-26
+### Fixed
 - Set `preferences.Minified` bool in `FormatCommand`
 
 ### [DesperateDevs.Unity.Editor/2.0.0] - 2022-09-26
+### Fixed
 - Set `preferences.Minified` bool in `PreferencesWindow`
 
 ### Other
@@ -94,61 +119,86 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 | DesperateDevs.Utils                                     | DesperateDevs.Reflection                                         |
 
 ### [DesperateDevs.Caching/1.0.0] - 2022-09-01
+### Added
 - Add `objectPool.Clear()`
 - Add `ObjectCache.ObjectPools` to get all object pools
 
 ### [DesperateDevs.Cli.Utils/1.0.0] - 2022-09-01
+### Added
 - Add `args.IsYes` and `args.IsNo`
 
 ### [DesperateDevs.Extensions/1.0.0] - 2022-09-01
+### Changed
 - Rename `string.LowercaseFirst()` to `string.ToLowerFirst()`
 - Rename `string.UppercaseFirst()` to `string.ToUpperFirst()`
 - Move `AppDomainExtension` to `DesperateDevs.DesperateDevs.Reflection`
 
 ### [DesperateDevs.Reflection/1.0.0] - 2022-09-01
+### Changed
 - Move `AppDomainExtension` from `DesperateDevs.DesperateDevs.Extensions`
 
 ### [DesperateDevs.Roslyn/1.0.0] - 2022-09-01
+### Added
 - Add `Microsoft.Build.Locator` 1.4.1
 - Update to `Microsoft.CodeAnalysis.CSharp.Workspaces` 4.1.0
 - Update to `Microsoft.CodeAnalysis.Workspaces.MSBuild` 4.1.0
+
+### Removed
 - Remove `Sherlog` dependencies
 
 ### [DesperateDevs.Serialization/1.0.0] - 2022-09-01
+### Changed
 - Change to `string.ToCSV(thibool minified, bool removeEmptyEntries)`
 - Change to `string.FromCSV(bool removeEmptyEntries)`
 
 ### [DesperateDevs.Serialization.Cli.Utils/1.0.0] - 2022-09-01
-- Change `DumpCommand` format
+### Added
 - Add empty value support in `DumpCommand`
+-
+### Changed
+- Change `DumpCommand` format
+
+### Removed
 - Remove `SetKeyValueCommand`
 
 ### [DesperateDevs.Unity/1.0.0] - 2022-09-01
+### Added
 - Add `CoroutineRunner.StopAll()`
 - Add non-generic `CoroutineRunner.Run()` without `onComplete` parameter
 - Use `UnityEditor.TypeCache.GetTypesDerivedFrom`
 
 ### [DesperateDevs.Unity.Editor/1.0.0] - 2022-09-01
+### Added
 - Add section state indicator to `PreferencesDrawer`
 - Add `ScriptingDefineSymbols.Add`
-- Rename to `ScriptingDefineSymbols.AddForAll`
 - Add `ScriptingDefineSymbols.Remove`
+-
+### Changed
+- Rename to `ScriptingDefineSymbols.AddForAll`
 - Rename to `ScriptingDefineSymbols.RemoveForAll`
 
 ### Jenny 1.0.0 - 2022-09-01
+### Changed
 - Rename `ICodeGenerationPlugin.priority` to `ICodeGenerationPlugin.Order`
 
 ### Jenny.Generator.Unity.Editor 1.0.0 - 2022-09-01
+### Fixed
 - Fix properties path being shared between projects
 - Automatically add missing keys to `Jenny.properties`
 
 ### Jenny.Plugins 1.0.0 - 2022-09-01
+### Changed
 - Rename to `UpdateCsprojPostProcessor`
 - Use unix path separator in `UpdateCsprojPostProcessor`
 
 ### Sherlog 1.0.0 - 2022-09-01
+### Added
 - Add `ConditionalAttribute` to `Logger`
+
+### Fixed
 - Fix `Logger.ResetAppenders()` not being applied to existing loggers
+
+### Changed
 - Rename to `Logger.ClearAppenders()` and `Logger.ClearLoggers()`
 - Remove static logger
 
@@ -186,13 +236,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] - 2021-09-16
 
-[Unreleased]: https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Caching/1.1.0...HEAD
-[DesperateDevs.Cli.Utils/1.0.1]: https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Cli.Utils/1.0.0...DesperateDevs.Cli.Utils/1.0.1
-[DesperateDevs.Reflection/1.0.1]: https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Reflection/1.0.0...DesperateDevs.Reflection/1.0.1
-[DesperateDevs.Caching/1.1.0]:https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Caching/1.0.0...DesperateDevs.Caching/1.1.0
-[DesperateDevs.Serialization/2.0.0]:https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Serialization/1.0.0...DesperateDevs.Serialization/2.0.0
-[DesperateDevs.Serialization.Cli.Utils/1.0.1]:https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Serialization.Cli.Utils/1.0.0...DesperateDevs.Serialization.Cli.Utils/1.0.1
-[DesperateDevs.Unity.Editor/2.0.0]:https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Unity.Editor/1.0.0...DesperateDevs.Unity.Editor/2.0.0
+[Unreleased]: https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Reflection/1.0.2...HEAD
+[DesperateDevs.Reflection/1.0.2]: https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Extensions/2.0.0...DesperateDevs.Reflection/1.0.2
+[DesperateDevs.Serialization/2.0.1]: https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Extensions/2.0.0...DesperateDevs.Serialization/2.0.1
+[DesperateDevs.Extensions/2.0.0]: https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Cli.Utils/1.0.2...DesperateDevs.Extensions/2.0.0
+[DesperateDevs.Cli.Utils/1.0.2]: https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Cli.Utils/1.0.1...DesperateDevs.Cli.Utils/1.0.2
+[DesperateDevs.Cli.Utils/1.0.1]: https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Caching/1.1.0...DesperateDevs.Cli.Utils/1.0.1
+[DesperateDevs.Reflection/1.0.1]: https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Caching/1.1.0...DesperateDevs.Reflection/1.0.1
+[DesperateDevs.Caching/1.1.0]:https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Serialization/2.0.0...DesperateDevs.Caching/1.1.0
+[DesperateDevs.Serialization/2.0.0]:https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Caching/1.0.0...DesperateDevs.Serialization/2.0.0
+[DesperateDevs.Serialization.Cli.Utils/1.0.1]:https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Caching/1.0.0...DesperateDevs.Serialization.Cli.Utils/1.0.1
+[DesperateDevs.Unity.Editor/2.0.0]:https://github.com/sschmid/DesperateDevs/compare/DesperateDevs.Caching/1.0.0...DesperateDevs.Unity.Editor/2.0.0
 [DesperateDevs.Caching/1.0.0]: https://github.com/sschmid/DesperateDevs/compare/0.1.0...DesperateDevs.Caching/1.0.0
 [DesperateDevs.Cli.Utils/1.0.0]: https://github.com/sschmid/DesperateDevs/compare/0.1.0...DesperateDevs.Cli.Utils/1.0.0
 [DesperateDevs.Extensions/1.0.0]: https://github.com/sschmid/DesperateDevs/compare/0.1.0...DesperateDevs.Extensions/1.0.0
